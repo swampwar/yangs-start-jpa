@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/JPALectureDB
+    username: postgres
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  output:
+    ansi:
+      enabled: detect
+
+  jpa:
+    hibernate:
+      ddl-auto: create # DDL적용방식 설정
+    show-sql: true # SQL출력 설정
+    properties:
+      hibernate.format_sql: true # SQL출력 포맷팅 설정
+
+logging:
+  level:
+    root: info
+    wind.yang.yangsjpademo: info
+    org.hibernate.type.descriptor.sql: trace
