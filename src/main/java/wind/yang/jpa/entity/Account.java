@@ -9,7 +9,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Entity(name = "account") // 객체의 이름
-@Table(name = "tb_account") // 테이블의 이름, 디폴트는 @Entity name과 동일하다.
+//@Table(name = "tb_account") // 테이블의 이름, 디폴트는 @Entity name과 동일하다.
 public class Account {
     @Id @GeneratedValue
     private Long id;

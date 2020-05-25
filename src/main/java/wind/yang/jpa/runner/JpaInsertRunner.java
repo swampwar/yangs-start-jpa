@@ -12,8 +12,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Date;
 
-@Component
-@Transactional // 메서드로 묶을 수 있지만 클래스도 가능, EntityManager가 실행하는 동작들은 한 트랜잭션 안에서 이루어져야 하기 때문에 선언한다.
+//@Component
+//@Transactional // 메서드로 묶을 수 있지만 클래스도 가능, EntityManager가 실행하는 동작들은 한 트랜잭션 안에서 이루어져야 하기 때문에 선언한다.
 @Order(1)
 public class JpaInsertRunner implements ApplicationRunner {
     @PersistenceContext // 빈으로 주입을 위해서
